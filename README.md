@@ -1,4 +1,4 @@
-# ✨ Ritam's Portfolio
+# ✨ My Portfolio
 
 A modern, responsive portfolio website showcasing my journey as a **Computational Problem Solver**, **Competitive Programmer**, **Prompt Engineer**, and **Software Engineer**.
 
@@ -132,5 +132,6 @@ This project is open source and available under the MIT License.
 ---
 
 **Made with ❤️ by [Ritam Saha](https://github.com/Ritam369)**
+
 
 
