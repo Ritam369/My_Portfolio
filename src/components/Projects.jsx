@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from '@/utils/motion';
 const ProjectCard = ({ project, index }) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.2, 0.75)}
-    className="group relative bg-white/98 backdrop-blur-sm rounded-2xl border border-navy-200/60 hover:border-navy-400/80 transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-navy-300/20 hover:-translate-y-2"
+    className="group relative bg-white/98 dark:bg-slate-800/98 backdrop-blur-sm rounded-2xl border border-navy-200/60 dark:border-slate-600/60 hover:border-navy-400/80 dark:hover:border-slate-500/80 transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-navy-300/20 dark:hover:shadow-slate-700/20 hover:-translate-y-2"
   >
     {/* Project header with status indicator */}
     <div className="p-8">
@@ -15,7 +15,7 @@ const ProjectCard = ({ project, index }) => (
         <div className="flex-1">
           <div className="flex items-center space-x-3 mb-3">
             <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 animate-pulse shadow-lg shadow-blue-400/50"></div>
-            <h3 className="text-navy-900 text-2xl font-bold group-hover:text-navy-700 transition-colors">
+            <h3 className="text-navy-900 dark:text-slate-100 text-2xl font-bold group-hover:text-navy-700 dark:group-hover:text-slate-200 transition-colors">
               {project.title}
             </h3>
           </div>
@@ -33,25 +33,25 @@ const ProjectCard = ({ project, index }) => (
           </div>
         </div>
         {/* MERN Stack indicator */}
-        <div className="bg-gradient-to-br from-navy-50 to-navy-100 rounded-xl p-3 border border-navy-200/60 group-hover:from-navy-100 group-hover:to-navy-150 transition-all duration-300">
-          <div className="text-navy-700 font-mono text-xs font-bold tracking-wider">MERN</div>
+        <div className="bg-gradient-to-br from-navy-50 to-navy-100 dark:from-slate-700 dark:to-slate-600 rounded-xl p-3 border border-navy-200/60 dark:border-slate-500/60 group-hover:from-navy-100 group-hover:to-navy-150 dark:group-hover:from-slate-600 dark:group-hover:to-slate-500 transition-all duration-300">
+          <div className="text-navy-700 dark:text-slate-200 font-mono text-xs font-bold tracking-wider">MERN</div>
         </div>
       </div>
       
-      <p className="text-navy-700 text-base leading-relaxed mb-6 group-hover:text-navy-800 transition-colors">
+      <p className="text-navy-700 dark:text-slate-300 text-base leading-relaxed mb-6 group-hover:text-navy-800 dark:group-hover:text-slate-200 transition-colors">
         {project.description}
       </p>
       
       {/* Technology stack with enhanced styling */}
       <div className="mb-6">
-        <h4 className="text-navy-800 font-semibold text-sm mb-3 uppercase tracking-wide">Tech Stack</h4>
+        <h4 className="text-navy-800 dark:text-slate-200 font-semibold text-sm mb-3 uppercase tracking-wide">Tech Stack</h4>
         <div className="flex flex-wrap gap-2">
           {project.technologies.map((tech, techIndex) => (
             <span 
               key={techIndex} 
-              className="inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-navy-50 to-navy-100 hover:from-navy-100 hover:to-navy-150 text-navy-800 text-sm rounded-lg border border-navy-200/60 font-medium transition-all duration-300 hover:shadow-md hover:shadow-navy-200/30 hover:-translate-y-0.5"
+              className="inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-navy-50 to-navy-100 dark:from-slate-700 dark:to-slate-600 hover:from-navy-100 hover:to-navy-150 dark:hover:from-slate-600 dark:hover:to-slate-500 text-navy-800 dark:text-slate-200 text-sm rounded-lg border border-navy-200/60 dark:border-slate-500/60 font-medium transition-all duration-300 hover:shadow-md hover:shadow-navy-200/30 dark:hover:shadow-slate-600/30 hover:-translate-y-0.5"
             >
-              <div className="w-1.5 h-1.5 bg-navy-500 rounded-full mr-2"></div>
+              <div className="w-1.5 h-1.5 bg-navy-500 dark:bg-blue-400 rounded-full mr-2"></div>
               {tech}
             </span>
           ))}
@@ -61,14 +61,14 @@ const ProjectCard = ({ project, index }) => (
       {/* Key features with professional styling */}
       {project.highlights && (
         <div>
-          <h4 className="text-navy-800 font-semibold text-sm mb-3 uppercase tracking-wide">Key Features</h4>
+          <h4 className="text-navy-800 dark:text-slate-200 font-semibold text-sm mb-3 uppercase tracking-wide">Key Features</h4>
           <ul className="space-y-3">
             {project.highlights.map((highlight, highlightIndex) => (
               <li key={highlightIndex} className="flex items-start group/item">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-navy-100 to-navy-200 flex items-center justify-center mr-3 mt-0.5 group-hover/item:from-navy-200 group-hover/item:to-navy-300 transition-all duration-300">
-                  <div className="w-2 h-2 bg-navy-600 rounded-full group-hover/item:bg-navy-700 transition-colors duration-300"></div>
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-navy-100 to-navy-200 dark:from-slate-700 dark:to-slate-600 flex items-center justify-center mr-3 mt-0.5 group-hover/item:from-navy-200 group-hover/item:to-navy-300 dark:group-hover/item:from-slate-600 dark:group-hover/item:to-slate-500 transition-all duration-300">
+                  <div className="w-2 h-2 bg-navy-600 dark:bg-blue-400 rounded-full group-hover/item:bg-navy-700 dark:group-hover/item:bg-blue-300 transition-colors duration-300"></div>
                 </div>
-                <span className="text-navy-600 text-sm leading-relaxed group-hover/item:text-navy-700 transition-colors duration-300">
+                <span className="text-navy-600 dark:text-slate-300 text-sm leading-relaxed group-hover/item:text-navy-700 dark:group-hover/item:text-slate-200 transition-colors duration-300">
                   {highlight}
                 </span>
               </li>
@@ -79,7 +79,7 @@ const ProjectCard = ({ project, index }) => (
     </div>
 
     {/* Bottom gradient bar */}
-    <div className="h-2 bg-gradient-to-r from-navy-400 via-navy-500 to-navy-600 rounded-b-2xl group-hover:from-navy-500 group-hover:via-navy-600 group-hover:to-navy-700 transition-all duration-300"></div>
+    <div className="h-2 bg-gradient-to-r from-navy-400 via-navy-500 to-navy-600 dark:from-blue-600 dark:via-blue-500 dark:to-blue-600 rounded-b-2xl group-hover:from-navy-500 group-hover:via-navy-600 group-hover:to-navy-700 dark:group-hover:from-blue-500 dark:group-hover:via-blue-400 dark:group-hover:to-blue-500 transition-all duration-300"></div>
     
     {/* Subtle grid pattern overlay */}
     <div className="absolute inset-0 rounded-2xl opacity-[0.02] group-hover:opacity-[0.04] transition-opacity duration-300 pointer-events-none" 
@@ -120,16 +120,16 @@ function Projects() {
   ];
 
   return (
-    <div className="bg-white py-16">
+    <div className="bg-white dark:bg-slate-900 py-16 transition-colors duration-300">
       <motion.div variants={textVariant(0.1)} className="text-center">
-        <p className={`${styles.sectionSubText} text-navy-600`}>
+        <p className={`${styles.sectionSubText} text-navy-600 dark:text-slate-400`}>
           Current Development Work
         </p>
-        <h2 className={`${styles.sectionHeadText} text-navy-900`}>
+        <h2 className={`${styles.sectionHeadText} text-navy-900 dark:text-slate-100`}>
           Projects.
         </h2>
         <motion.p
-          className="mt-5 text-navy-700 text-[16px] max-w-3xl mx-auto leading-relaxed"
+          className="mt-5 text-navy-700 dark:text-slate-300 text-[16px] max-w-3xl mx-auto leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}

@@ -6,10 +6,10 @@ import { SectionWrapper } from '@/hooks'
 
 function Skills() {
     return (
-        <div className='bg-slate-50 py-16'>
+        <div className='bg-slate-50 dark:bg-slate-900 py-16 transition-colors duration-300'>
             <div className="text-center mb-12">
-                <p className={`${styles.sectionSubText} text-navy-600`}>Technical Proficiency</p>
-                <h2 className={`${styles.sectionHeadText} text-navy-900`}>Skills.</h2>
+                <p className={`${styles.sectionSubText} text-navy-600 dark:text-slate-400`}>Technical Proficiency</p>
+                <h2 className={`${styles.sectionHeadText} text-navy-900 dark:text-slate-100`}>Skills.</h2>
             </div>
             <div className='flex flex-wrap justify-center lg:px-40 md:px-12 px-14 pb-8'>
                 <motion.div 
@@ -19,7 +19,7 @@ function Skills() {
                 >
                     {techStack.map((skill, index) => (
                         <motion.div
-                            className='aspect-square w-[85px] h-[85px] bg-white/90 rounded-full flex items-center justify-center backdrop-blur-sm hover:bg-navy-50 transition-colors group shadow-lg border border-navy-200 hover:border-navy-400'
+                            className='aspect-square w-[85px] h-[85px] bg-white/90 dark:bg-slate-800/90 rounded-full flex items-center justify-center backdrop-blur-sm hover:bg-navy-50 dark:hover:bg-slate-700 transition-colors group shadow-lg border border-navy-200 dark:border-slate-600 hover:border-navy-400 dark:hover:border-slate-500'
                             key={skill.name}
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}

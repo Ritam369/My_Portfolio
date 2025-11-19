@@ -42,8 +42,8 @@ const Navbar = () => {
       transition={{ duration: 0.6, ease: "easeInOut" }}
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 transition-all duration-300 ease-in-out
         ${scrolled 
-          ? "bg-white/95 backdrop-blur-md shadow-lg shadow-navy-100/20 border-b border-navy-100" 
-          : "bg-white/80 backdrop-blur-sm"
+          ? "bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-lg shadow-navy-100/20 dark:shadow-slate-700/20 border-b border-navy-100 dark:border-slate-700" 
+          : "bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm"
         }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -63,13 +63,13 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           />
           <motion.p
-            className="text-navy-900 text-[18px] font-bold cursor-pointer flex"
+            className="text-navy-900 dark:text-slate-100 text-[18px] font-bold cursor-pointer flex"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             whileHover={{ scale: 1.05 }}
           >
-            <span className="logo text-3xl font-bold text-slate-700 hover:text-navy-900 transition-colors duration-300" style={{ color: '#1e293b' }}>
+            <span className="logo text-3xl font-bold text-slate-700 dark:text-slate-100 hover:text-navy-900 dark:hover:text-slate-200 transition-colors duration-300">
               Ritam Saha
             </span>
           </motion.p>
@@ -82,8 +82,8 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title 
-                  ? "text-navy-800" 
-                  : "text-navy-600"
+                  ? "text-navy-800 dark:text-slate-200" 
+                  : "text-navy-600 dark:text-slate-400"
               } text-[18px] font-medium cursor-pointer relative group`}
               whileHover={{ scale: 1.05 }}
               onClick={() => {
@@ -92,10 +92,10 @@ const Navbar = () => {
               }}
             >
               <span
-                className="transition duration-300 ease-in-out hover:text-navy-800 relative"
+                className="transition duration-300 ease-in-out hover:text-navy-800 dark:hover:text-slate-200 relative"
               >
                 {nav.title}
-                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-navy-600 to-navy-800 transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-navy-600 to-navy-800 dark:from-slate-400 dark:to-slate-200 transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
               </span>
             </motion.li>
           ))}
@@ -107,7 +107,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => setToggle(!toggle)}
-            className="w-10 h-10 rounded-full bg-gradient-to-r from-navy-100 to-navy-200 flex items-center justify-center cursor-pointer border border-navy-300"
+            className="w-10 h-10 rounded-full bg-gradient-to-r from-navy-100 to-navy-200 dark:from-slate-700 dark:to-slate-600 flex items-center justify-center cursor-pointer border border-navy-300 dark:border-slate-500"
           >
             <img
               src={toggle ? close : menu}
@@ -123,7 +123,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: -20 }}
                 transition={{ duration: 0.2 }}
-                className="p-6 bg-white/95 backdrop-blur-lg absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl border border-navy-200 shadow-xl"
+                className="p-6 bg-white/95 dark:bg-slate-800/95 backdrop-blur-lg absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl border border-navy-200 dark:border-slate-600 shadow-xl"
               >
                 <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
                   {navLinks.map((nav) => (
@@ -132,8 +132,8 @@ const Navbar = () => {
                       whileHover={{ x: 5 }}
                       className={`font-medium cursor-pointer text-[16px] w-full
                         ${active === nav.title 
-                          ? "text-navy-800" 
-                          : "text-navy-600"
+                          ? "text-navy-800 dark:text-slate-200" 
+                          : "text-navy-600 dark:text-slate-400"
                         }`}
                       onClick={() => {
                         setToggle(!toggle);
@@ -142,7 +142,7 @@ const Navbar = () => {
                       }}
                     >
                       <span
-                        className="block w-full p-2 rounded-lg hover:bg-navy-50 transition-all duration-300"
+                        className="block w-full p-2 rounded-lg hover:bg-navy-50 dark:hover:bg-slate-700 transition-all duration-300"
                       >
                         {nav.title}
                       </span>
