@@ -69,10 +69,10 @@ const Navbar = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             whileHover={{ scale: 1.05 }}
           >
-            <span className="logo text-3xl font-bold text-slate-700 dark:text-slate-100 hover:text-navy-900 dark:hover:text-slate-200 transition-colors duration-300">
+            <span className="logo text-3xl font-bold dark:!text-slate-100 transition-colors duration-300" style={{ color: '#0e172b' }}>
               Ritam Saha
             </span>
-          </motion.p>
+          </motion.p> 
         </Link>
 
         {/* Desktop Navigation */}
