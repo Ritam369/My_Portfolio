@@ -8,12 +8,23 @@ const ThemeToggle = () => {
   return (
     <motion.button
       onClick={toggleTheme}
-      className="fixed bottom-8 right-8 z-50 w-14 h-14 rounded-full bg-slate-700 dark:bg-slate-700 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group border-2 border-slate-600 dark:border-slate-600"
-      whileHover={{ scale: 1.1 }}
+      className="fixed bottom-8 right-8 z-50 w-14 h-14 rounded-full bg-slate-700 dark:bg-slate-700 shadow-lg flex items-center justify-center group border-2 border-slate-600 dark:border-slate-600"
+      whileHover={{ 
+        scale: 1.2,
+        boxShadow: isDark 
+          ? "0 0 25px 5px rgba(253, 224, 71, 0.6)" // Yellow glow for Sun
+          : "0 0 25px 5px rgba(99, 102, 241, 0.6)" // Indigo glow for Moon
+      }}
       whileTap={{ scale: 0.9 }}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ 
+        type: "spring", 
+        stiffness: 300, 
+        damping: 20,
+        opacity: { duration: 0.5 },
+        y: { duration: 0.5 }
+      }}
     >
       {isDark ? (
         <svg
