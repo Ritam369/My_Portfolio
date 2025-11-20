@@ -11,11 +11,11 @@ function Skills() {
                 <p className={`${styles.sectionSubText} text-navy-600 dark:text-slate-400`}>Technical Proficiency</p>
                 <h2 className={`${styles.sectionHeadText} text-navy-900 dark:text-slate-100`}>Skills.</h2>
             </div>
-            <div className='flex flex-wrap justify-center lg:px-40 md:px-12 px-14 pb-8'>
+            <div className='flex justify-center lg:px-40 md:px-12 px-14 pb-8'>
                 <motion.div 
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className='grid grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-8'
+                    className='flex flex-wrap justify-center gap-8 max-w-7xl'
                 >
                     {techStack.map((skill, index) => (
                         <motion.div

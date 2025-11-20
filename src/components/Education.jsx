@@ -50,10 +50,10 @@ function Education() {
       duration: "2023 - 2027 (Expected)",
       gpa: "7.58 GPA",
       year: "2023",
-      description: "Currently in 3rd year, pursuing B.Tech with focus on software development, algorithms, and emerging technologies. Won silver medal in Code-Ardor competition during college Tech-fest. Active in coding communities and competitive programming."
+  description: "Currently in the third year of B.Tech in Computer Science Engineering, with a focus on software development, algorithms, and emerging technologies. Awarded the silver medal in the Code-Ardor competition at the college tech‑fest Bits2Bytes 2024 and the gold medal in the Return 0 hackathon, the flagship event of Bits2Bytes 2025. Actively involved in coding communities and competitive programming."
     },
     {
-      degree: "Higher Secondary (12th Grade)",
+      degree: "Higher Secondary (10+2 Grades)",
       institution: "Bidhannagar Govt. High School",
       duration: "2021 - 2023",
       gpa: "84.2%",

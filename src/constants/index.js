@@ -81,13 +81,13 @@ const services = [
     },
 ];
 
-const techStack = ["C", "Java", "Python", "html", "css", "js", "nodejs", "Expressjs", "React", "Mysql", "Mongodb", "VScode", "Git", "Github", "Ubuntu", "Notion"].map(name => ({
+const techStack = ["C", "Java", "html", "css", "js", "nodejs", "Expressjs", "React", "Tailwind", "Mysql", "Mongodb", "VScode", "Zed", "Git", "Github", "Ubuntu"].map(name => ({
     name,
     imageUrl: `https://go-skill-icons.vercel.app/api/icons?i=${name.toLowerCase()}`
 }));
 
 
-const home_page_text = "A 3rd-year Computer Science Engineering student at Techno Bengal Institute of Technology with a strong passion for problem-solving, algorithms, and emerging technologies. My journey has been shaped by exploring the depth of coding, AI, and innovation while continuously striving to create meaningful impact through technology. I bring with me valuable past experiences as the Lead of DSA and CP at GDG on Campus BIT and as a Campus Ambassador for E-Summit'24, Jadavpur University. These roles have helped me develop leadership, mentorship, and collaboration skills while working with diverse teams and communities. Through my leadership roles and project experience, I have developed strong collaboration skills and a commitment to mentoring others in the tech community."
+const home_page_text = "A 3rd-year Computer Science Engineering student at Techno Bengal Institute of Technology with a strong passion for problem-solving, algorithms, and emerging technologies. My journey has been shaped by exploring the depth of coding, AI, and innovation while continuously striving to create meaningful impact through technology. I bring with me valuable past experiences as the Lead of DSA and CP at GDG on Campus BIT (2024-25) and as a Campus Ambassador for E-Summit'24, Jadavpur University. These roles have helped me develop leadership, mentorship, and collaboration skills while working with diverse teams and communities. Through my leadership roles and project experience, I have developed strong collaboration skills and a commitment to mentoring others in the tech community."
 
 const about_page_text = "I am a dedicated Computer Science Engineering student with a strong foundation in software development, problem-solving, and modern web technologies. My expertise spans across full-stack development using the MERN stack, competitive programming, and emerging technologies like AI and prompt engineering. I am passionate about creating efficient, scalable solutions and continuously expanding my technical knowledge to stay at the forefront of technological innovation."
 
