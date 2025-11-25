@@ -138,11 +138,16 @@ function Projects() {
         </motion.p>
       </motion.div>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-1 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <motion.div 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.1 }}
+        className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-1 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
         {projectsData.map((project, index) => (
           <ProjectCard key={index} project={project} index={index} />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
