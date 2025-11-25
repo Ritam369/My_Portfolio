@@ -8,7 +8,7 @@ import ServiceCard from "./ServiceCard";
 
 function About() {
     return (
-    <div className="relative px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900 py-20 transition-colors duration-300 overflow-hidden">
+    <div className="relative px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm py-20 transition-colors duration-300 overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute top-20 right-10 w-64 h-64 bg-navy-100/20 dark:bg-slate-700/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-100/20 dark:bg-slate-600/10 rounded-full blur-3xl"></div>

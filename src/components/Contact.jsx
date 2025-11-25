@@ -59,7 +59,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="relative px-4 sm:px-6 lg:px-8 py-16 overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-300">
+        <div className="relative px-4 sm:px-6 lg:px-8 py-16 overflow-hidden bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm transition-colors duration-300">
             <div className="absolute top-0 left-0 w-72 h-72 bg-navy-200/30 dark:bg-slate-700/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-40 animate-blob"></div>
             <div className="absolute top-0 right-0 w-72 h-72 bg-blue-200/30 dark:bg-slate-600/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-40 animate-blob animation-delay-2000"></div>
             <div className="absolute -bottom-8 left-20 w-72 h-72 bg-slate-200/30 dark:bg-slate-700/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-40 animate-blob animation-delay-4000"></div>

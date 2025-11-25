@@ -71,7 +71,7 @@ function Education() {
   ];
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-900 py-16 transition-colors duration-300">
+    <div className="px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm py-16 transition-colors duration-300">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -40,7 +40,7 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 transition-all duration-300 ease-in-out
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-50 transition-all duration-300 ease-in-out
         ${scrolled 
           ? "bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-lg shadow-navy-100/20 dark:shadow-slate-700/20 border-b border-navy-100 dark:border-slate-700" 
           : "bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm"

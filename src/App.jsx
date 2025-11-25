@@ -10,18 +10,19 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import { ThemeProvider } from './contexts/ThemeContext';
 import ThemeToggle from './components/ThemeToggle';
+import ParticleBackground from './components/ParticleBackground';
 
 function App() {
 
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <div className='z-0 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 scroll-smooth min-h-screen transition-colors duration-300'>
-          <div className='min-h-screen'>
-            <Navbar />
+        <div className='relative z-0 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 scroll-smooth min-h-screen transition-colors duration-300'>
+          <ParticleBackground />
+          <div className='relative min-h-screen'>
             <Hero/>
           </div>
-          <div className="mt-10">
+          <div className="relative mt-10">
             <About/>
             <Education/>
             <Projects/>
@@ -29,6 +30,7 @@ function App() {
             <Contact/>
           </div>
         </div>
+        <Navbar />
         <ThemeToggle />
       </BrowserRouter>
     </ThemeProvider>

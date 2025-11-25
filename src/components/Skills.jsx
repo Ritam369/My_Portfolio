@@ -6,7 +6,7 @@ import { SectionWrapper } from '@/hooks'
 
 function Skills() {
     return (
-        <div className='bg-slate-50 dark:bg-slate-900 py-16 transition-colors duration-300'>
+        <div className='bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm py-16 transition-colors duration-300'>
             <div className="text-center mb-12">
                 <p className={`${styles.sectionSubText} text-navy-600 dark:text-slate-400`}>Technical Proficiency</p>
                 <h2 className={`${styles.sectionHeadText} text-navy-900 dark:text-slate-100`}>Skills.</h2>
