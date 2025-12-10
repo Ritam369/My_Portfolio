@@ -11,6 +11,7 @@ import Contact from './components/Contact';
 import { ThemeProvider } from './contexts/ThemeContext';
 import ThemeToggle from './components/ThemeToggle';
 import ParticleBackground from './components/ParticleBackground';
+import { SocialDock } from './components/SocialDock';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         </div>
         <Navbar />
         <ThemeToggle />
+        <SocialDock />
       </BrowserRouter>
     </ThemeProvider>
   )

@@ -140,7 +140,7 @@
 
 
 
-import { home_page_text, socialsData, words } from "@/constants";
+import { home_page_text, words } from "@/constants";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
@@ -201,34 +201,7 @@ const Home = () => {
               {home_page_text}
             </p>
 
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="flex gap-4 my-2"
-            >
-              {socialsData.map((social, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ scale: 1.1 }}
-                  className="relative group w-14 h-14 flex justify-center items-center rounded-full overflow-hidden border-2 border-navy-600 dark:border-slate-500"
-                >
-                  <div className="absolute -inset-2 bg-gradient-to-r from-navy-400 to-navy-600 dark:from-slate-600 dark:to-slate-400 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300" />
-                  <div className="relative flex justify-center items-center w-full h-full bg-white/90 dark:bg-slate-700/90 rounded-full backdrop-blur-sm border-4 border-transparent group-hover:border-navy-600 dark:group-hover:border-slate-500 transition-all duration-300">
-                    <a
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-2xl text-navy-700 dark:text-slate-300 group-hover:text-navy-900 dark:group-hover:text-slate-100 transition-colors"
-                    >
-                      <i className={social.icon}></i>
-                    </a>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 mt-6">
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
