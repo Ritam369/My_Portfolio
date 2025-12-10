@@ -4,6 +4,7 @@ import Software from "./icons/se.png";
 import Prompt from "./icons/pe.png";
 import Competitive from "./icons/cp.png";
 import Computational from "./icons/cps.png";
+import toggleSound from "./sound/light_switch.mp3";
 
 
 export {
@@ -13,4 +14,5 @@ export {
     Prompt,
     Competitive,
     Computational,
+    toggleSound,
 }

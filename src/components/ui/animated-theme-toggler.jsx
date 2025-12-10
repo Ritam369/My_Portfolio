@@ -2,12 +2,17 @@ import { useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { flushSync } from 'react-dom';
 import { useTheme } from '../../contexts/ThemeContext';
+import { toggleSound } from '../../assets';
 
 export function AnimatedThemeToggler({ duration = 400 }) {
   const { isDark, toggleTheme } = useTheme();
   const buttonRef = useRef(null);
 
   const handleToggle = useCallback(async () => {
+    const audio = new Audio(toggleSound);
+    audio.volume = 0.5;
+    audio.play().catch(() => {});
+
     if (!buttonRef.current || !document.startViewTransition) {
       toggleTheme();
       return;
