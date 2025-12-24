@@ -2,7 +2,6 @@ import { socialsData, Email } from "@/constants"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { Dock, DockIcon } from "@/components/ui/dock"
 
 const Icons = {
@@ -49,56 +48,40 @@ const socialIconMap = {
 export function SocialDock() {
   return (
     <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-40">
-      <TooltipProvider>
-        <Dock>
-          {socialsData.map((social) => {
-            const IconComponent = socialIconMap[social.name]
-            return (
-              <DockIcon key={social.name}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <a
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={social.name}
-                      className={cn(
-                        buttonVariants({ variant: "ghost", size: "icon" }),
-                        "size-12 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700"
-                      )}
-                    >
-                      <IconComponent className="size-5 text-navy-700 dark:text-slate-300" />
-                    </a>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>{social.name}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </DockIcon>
-            )
-          })}
-          <Separator orientation="vertical" className="h-8 my-auto" />
-          <DockIcon>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <a
-                  href={`mailto:${Email}`}
-                  aria-label="Send Email"
-                  className={cn(
-                    buttonVariants({ variant: "ghost", size: "icon" }),
-                    "size-12 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700"
-                  )}
-                >
-                  <Icons.email className="size-5 text-navy-700 dark:text-slate-300" />
-                </a>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Send Email</p>
-              </TooltipContent>
-            </Tooltip>
-          </DockIcon>
-        </Dock>
-      </TooltipProvider>
+      <Dock>
+        {socialsData.map((social) => {
+          const IconComponent = socialIconMap[social.name]
+          return (
+            <DockIcon key={social.name}>
+              <a
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.name}
+                className={cn(
+                  buttonVariants({ variant: "ghost", size: "icon" }),
+                  "size-12 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700"
+                )}
+              >
+                <IconComponent className="size-5 text-navy-700 dark:text-slate-300" />
+              </a>
+            </DockIcon>
+          )
+        })}
+        <Separator orientation="vertical" className="h-8 my-auto" />
+        <DockIcon>
+          <a
+            href={`mailto:${Email}`}
+            aria-label="Send Email"
+            className={cn(
+              buttonVariants({ variant: "ghost", size: "icon" }),
+              "size-12 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700"
+            )}
+          >
+            <Icons.email className="size-5 text-navy-700 dark:text-slate-300" />
+          </a>
+        </DockIcon>
+      </Dock>
     </div>
   )
 }
