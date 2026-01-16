@@ -48,7 +48,7 @@ function Education() {
       degree: "Bachelor of Technology in Computer Science Engineering",
       institution: "Techno Bengal Institute of Technology",
       duration: "2023 - 2027 (Expected)",
-      gpa: "7.58 GPA",
+      gpa: "7.67 GPA",
       year: "2023",
   description: "Currently in the third year of B.Tech in Computer Science Engineering, with a focus on software development, algorithms, and emerging technologies. Awarded the silver medal in the Code-Ardor competition at the college tech‑fest Bits2Bytes 2024 and the gold medal in the Return 0 hackathon, the flagship event of Bits2Bytes 2025. Actively involved in coding communities and competitive programming."
     },
