@@ -18,16 +18,16 @@ function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <div className='relative z-0 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 scroll-smooth min-h-screen transition-colors duration-300'>
+        <div className='relative z-0 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950 scroll-smooth min-h-screen transition-colors duration-300'>
           <ParticleBackground />
           <div className='relative min-h-screen'>
             <Hero/>
           </div>
-          <div className="relative mt-10">
-            <About/>
+          <div className="relative">
+            {/* <About/> */}
+            <Skills/>
             <Education/>
             <Projects/>
-            <Skills/>
             <Contact/>
           </div>
         </div>

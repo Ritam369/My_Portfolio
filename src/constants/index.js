@@ -26,9 +26,13 @@ const socialsData = [
 ];
 
 const navLinks = [
+    // {
+    //     id: "about",
+    //     title: "About",
+    // },
     {
-        id: "about",
-        title: "About",
+        id: "skills",
+        title: "Skills",
     },
     {
         id: "education",
@@ -37,10 +41,6 @@ const navLinks = [
     {
         id: "projects",
         title: "Projects",
-    },
-    {
-        id: "skills",
-        title: "Skills",
     },
     {
         id: "contact",

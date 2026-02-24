@@ -120,7 +120,7 @@ function Projects() {
   ];
 
   return (
-    <div className="bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm py-16 transition-colors duration-300">
+    <div className="bg-white/50 dark:bg-zinc-950/30 backdrop-blur-sm py-16 transition-colors duration-300">
       <motion.div variants={textVariant(0.1)} className="text-center">
         <p className={`${styles.sectionSubText} text-navy-600 dark:text-slate-400`}>
           Current Development Work

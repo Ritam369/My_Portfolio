@@ -59,7 +59,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="relative px-4 sm:px-6 lg:px-8 py-16 overflow-hidden bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm transition-colors duration-300">
+        <div className="relative px-4 sm:px-6 lg:px-8 py-16 overflow-hidden bg-white/50 dark:bg-zinc-950/30 backdrop-blur-sm transition-colors duration-300">
             <div className="absolute top-0 left-0 w-72 h-72 bg-navy-200/30 dark:bg-slate-700/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-40 animate-blob"></div>
             <div className="absolute top-0 right-0 w-72 h-72 bg-blue-200/30 dark:bg-slate-600/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-40 animate-blob animation-delay-2000"></div>
             <div className="absolute -bottom-8 left-20 w-72 h-72 bg-slate-200/30 dark:bg-slate-700/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-40 animate-blob animation-delay-4000"></div>
@@ -120,7 +120,7 @@ const Contact = () => {
                 
                 <motion.div
                     variants={fadeIn("left", "", 0.2, 1)}
-                    className="bg-white/95 dark:bg-slate-800/95 p-8 rounded-2xl backdrop-blur-lg shadow-xl border border-navy-200 dark:border-slate-600"
+                    className="bg-white/95 dark:bg-zinc-900/10 p-8 rounded-2xl backdrop-blur-lg shadow-xl border border-navy-200 dark:border-zinc-900"
                 >
                     <form
                         ref={formRef}
@@ -135,7 +135,7 @@ const Contact = () => {
                                 value={form.name}
                                 onChange={handleChange}
                                 placeholder="What's your name?"
-                                className="bg-navy-50 dark:bg-slate-700 py-4 px-6 placeholder:text-navy-400 dark:placeholder:text-slate-400 text-navy-900 dark:text-slate-100 rounded-lg outline-none border border-navy-200 dark:border-slate-600 font-medium transition-all duration-300 focus:ring-2 focus:ring-navy-500 dark:focus:ring-blue-500 focus:border-navy-500 dark:focus:border-blue-500"
+                                className="bg-navy-50 dark:bg-zinc-600/10 py-4 px-6 placeholder:text-navy-400 dark:placeholder:text-slate-400 text-navy-900 dark:text-slate-100 rounded-lg outline-none border border-navy-200 dark:border-none font-medium transition-all duration-300 focus:ring-2 focus:ring-navy-500 dark:focus:ring-blue-500 focus:border-navy-500 dark:focus:border-blue-500"
                                 required
                             />
                         </label>
@@ -147,7 +147,7 @@ const Contact = () => {
                                 value={form.email}
                                 onChange={handleChange}
                                 placeholder="What's your email?"
-                                className="bg-navy-50 dark:bg-slate-700 py-4 px-6 placeholder:text-navy-400 dark:placeholder:text-slate-400 text-navy-900 dark:text-slate-100 rounded-lg outline-none border border-navy-200 dark:border-slate-600 font-medium transition-all duration-300 focus:ring-2 focus:ring-navy-500 dark:focus:ring-blue-500 focus:border-navy-500 dark:focus:border-blue-500"
+                                className="bg-navy-50 dark:bg-zinc-600/10 py-4 px-6 placeholder:text-navy-400 dark:placeholder:text-slate-400 text-navy-900 dark:text-slate-100 rounded-lg outline-none border border-navy-200 dark:border-none font-medium transition-all duration-300 focus:ring-2 focus:ring-navy-500 dark:focus:ring-blue-500 focus:border-navy-500 dark:focus:border-blue-500"
                                 required
                             />
                         </label>
@@ -159,14 +159,14 @@ const Contact = () => {
                                 value={form.message}
                                 onChange={handleChange}
                                 placeholder="What do you want to say?"
-                                className="bg-navy-50 dark:bg-slate-700 py-4 px-6 placeholder:text-navy-400 dark:placeholder:text-slate-400 text-navy-900 dark:text-slate-100 rounded-lg outline-none border border-navy-200 dark:border-slate-600 font-medium resize-none transition-all duration-300 focus:ring-2 focus:ring-navy-500 dark:focus:ring-blue-500 focus:border-navy-500 dark:focus:border-blue-500"
+                                className="bg-navy-50 dark:bg-zinc-600/10 py-4 px-6 placeholder:text-navy-400 dark:placeholder:text-slate-400 text-navy-900 dark:text-slate-100 rounded-lg outline-none border border-navy-200 dark:border-none font-medium resize-none transition-all duration-300 focus:ring-2 focus:ring-navy-500 dark:focus:ring-blue-500 focus:border-navy-500 dark:focus:border-blue-500"
                                 required
                             />
                         </label>
 
                         <button
                             type="submit"
-                            className="bg-navy-600 dark:bg-slate-700 hover:bg-navy-700 dark:hover:bg-slate-600 py-3 px-8 outline-none w-fit text-white font-bold shadow-lg rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+                            className="bg-navy-600 dark:bg-zinc-800 hover:bg-zinc-700 dark:hover:bg-zinc-700 py-3 px-8 outline-none w-fit text-white font-bold shadow-lg rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
                             disabled={loading}
                         >
                             {loading && (

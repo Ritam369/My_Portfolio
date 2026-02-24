@@ -6,7 +6,7 @@ import { SectionWrapper } from '@/hooks'
 
 function Skills() {
     return (
-        <div className='bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm py-16 transition-colors duration-300'>
+        <div className='bg-white/50 dark:bg-zinc-950/30 backdrop-blur-sm py-16 transition-colors duration-300'>
             <div className="text-center mb-12">
                 <p className={`${styles.sectionSubText} text-navy-600 dark:text-slate-400`}>Technical Proficiency</p>
                 <h2 className={`${styles.sectionHeadText} text-navy-900 dark:text-slate-100`}>Skills.</h2>
@@ -23,7 +23,7 @@ function Skills() {
                             key={skill.name}
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            transition={{ duration: 1.5, delay: index * 0.15 }}
                             whileHover={{ scale: 1.1 }}
                         >
                             <img

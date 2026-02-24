@@ -12,7 +12,7 @@ const EducationCard = ({ degree, institution, duration, gpa, description, index,
     transition={{ duration: 0.6, delay: index * 0.2 }}
     className="relative"
   >
-    <div className="bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm p-6 rounded-xl border border-navy-200 dark:border-slate-600 hover:border-navy-400 dark:hover:border-slate-500 transition-all duration-300 shadow-lg hover:shadow-xl group">
+    <div className="bg-white/95 dark:bg-zinc-900/20 backdrop-blur-sm p-6 rounded-xl border border-navy-200 dark:border-zinc-600 hover:border-navy-400 dark:hover:border-zinc-500 bg-gradient-to-br transition-all duration-300 shadow-lg hover:shadow-xl group">
       {/* Dot on card side */}
       <motion.div
         initial={{ scale: 0 }}
@@ -71,7 +71,7 @@ function Education() {
   ];
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm py-16 transition-colors duration-300">
+    <div className="px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-zinc-950/30 backdrop-blur-sm py-16 transition-colors duration-300">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

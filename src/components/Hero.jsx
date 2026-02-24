@@ -174,7 +174,7 @@ const Home = () => {
 
   return (
     // Removed the local background gradient so the global App background + particles show through
-    <section className="relative w-full min-h-[calc(100vh-40px)] mx-auto text-navy-900 dark:text-slate-100 overflow-hidden">
+    <section className="relative w-full min-h-[calc(100vh-40px)] mx-auto pt-10 text-navy-900 dark:text-slate-100 overflow-hidden">
       
       {/* Optional: Keep the animated blobs if you like them, but make them subtle */}
       <div className="pointer-events-none absolute inset-0 z-[-1]">
@@ -192,10 +192,10 @@ const Home = () => {
             className="flex flex-col items-start space-y-4 sm:space-y-6 max-w-2xl order-2 lg:order-1"
           >
             <h1 className="text-5xl md:text-7xl font-bold animate-fadeIn text-navy-900 dark:text-slate-100">
-              Hi, I'm <span className="text-navy-600 dark:text-blue-400 hover:text-navy-700 dark:hover:text-blue-300 transition-colors">Ritam</span>
+              Hi, I'm <span className="text-navy-600 dark:text-zinc-500 hover:text-navy-700 dark:hover:text-zinc-200 transition-colors">Ritam</span>
             </h1>
             <h3 className="text-2xl md:text-3xl font-semibold text-navy-800 dark:text-slate-200">
-              I'm a <span className="border-r-2 border-navy-600 dark:border-blue-400 text-navy-600 dark:text-blue-400 typing-text">{words[wordIndex].substring(0, charIndex)}</span>
+              I'm a <span className="border-r-2 border-navy-600 dark:border-zinc-300 text-navy-600 dark:text-zinc-500 dark:hover:text-zinc-200 typing-text">{words[wordIndex].substring(0, charIndex)}</span>
             </h3>
             <p className="text-base md:text-lg leading-relaxed text-navy-700 dark:text-slate-300 hover:text-navy-800 dark:hover:text-slate-200 transition-colors">
               {home_page_text}
@@ -206,15 +206,15 @@ const Home = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="#contact" 
-                className="bg-navy-600 dark:bg-slate-700 hover:bg-navy-700 dark:hover:bg-slate-600 text-white font-semibold rounded-full px-6 py-3 transition-colors shadow-lg"
+                className="bg-navy-600 dark:bg-zinc-700 hover:bg-navy-700 dark:hover:bg-zinc-800 text-white font-semibold rounded-full px-6 py-3 transition-colors shadow-lg"
               >
                 Hire Me
               </motion.a>
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="#contact" 
-                className="border-2 border-navy-600 dark:border-slate-500 hover:bg-navy-600 dark:hover:bg-slate-600 hover:text-white text-navy-600 dark:text-slate-300 font-semibold rounded-full px-6 py-3 transition-all"
+                href="#contact"
+                className="border-2 border-navy-600 dark:border-zinc-500 hover:bg-navy-800 dark:hover:bg-zinc-700 hover:text-white text-navy-600 dark:text-zinc-300 font-semibold rounded-full px-6 py-3 transition-all"
               >
                 Contact
               </motion.a>
@@ -227,8 +227,8 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="order-1 lg:order-2 relative group"
           >
-            <div className="absolute inset-5 bg-gradient-to-r from-navy-300/20 to-blue-300/20 dark:from-slate-600/20 dark:to-slate-500/20 rounded-full blur-2xl transform scale-110 
-              group-hover:from-navy-400/30 group-hover:to-blue-400/30 dark:group-hover:from-slate-500/30 dark:group-hover:to-slate-400/30 group-hover:blur-3xl transition-all duration-300" />
+            <div className="absolute inset-5 bg-gradient-to-r from-navy-300/20 to-blue-300/20 dark:from-zinc-700/15 dark:to-zinc-600/15 rounded-full blur-2xl transform scale-110 
+              group-hover:from-navy-400/30 group-hover:to-blue-400/30 dark:group-hover:from-zinc-600/25 dark:group-hover:to-zinc-500/25 group-hover:blur-3xl transition-all duration-300" />
             
             <Tilt
               tiltMaxAngleX={15}
