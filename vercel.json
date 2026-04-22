@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/blogs",
+      "destination": "https://dev.to/ritam369",
+      "permanent": true
+    },
+    {
+      "source": "/links",
+      "destination": "https://linktr.ee/Ritamsworkspace137",
+      "permanent": true
+    }
+  ]
+}
