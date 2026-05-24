@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/blogs",
-      "destination": "https://dev.to/ritam369",
+      "destination": "https://ritamsahablogs.dev/",
       "permanent": true
     },
     {

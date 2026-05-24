@@ -23,6 +23,11 @@ const socialsData = [
         url: "https://x.com/saharitam963",
         icon: "bx bxl-twitter"
     },
+    {
+        name: "Blogs",
+        url: "https://ritamsahablogs.dev/",
+        icon: "bx bxl-dev-to"
+    }
 ];
 
 const navLinks = [
