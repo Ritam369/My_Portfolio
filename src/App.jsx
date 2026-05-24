@@ -12,6 +12,7 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import ThemeToggle from './components/ThemeToggle';
 import ParticleBackground from './components/ParticleBackground';
 import { SocialDock } from './components/SocialDock';
+import NekoCat from './components/NekoCat';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Navbar />
         <ThemeToggle />
         <SocialDock />
+        <NekoCat />
       </BrowserRouter>
     </ThemeProvider>
   )
